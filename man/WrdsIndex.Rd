@@ -51,6 +51,12 @@
     \item \link{getReturnPivot}
     \item \link{getFundamentalReturnQuery}
     \item \link{getFundamentalReturn}
+    \item \link{getadditionalFundamentalReturn}
+    \item \link{getFundamental.aligned}
+    \item \link{getadditionalFundamental.aligned}
+    \item \link{getFundamental.QuarterlyReturn}
+    \item \link{getadditionalFundamental.QuarterlyReturn}
+
   }
 }
 \examples{

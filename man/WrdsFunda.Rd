@@ -6,6 +6,11 @@
 \alias{getReturnPivot}
 \alias{getFundamentalReturnQuery}
 \alias{getFundamentalReturn}
+\alias{getadditionalFundamentalReturn}
+\alias{getFundamental.aligned}
+\alias{getadditionalFundamental.aligned}
+\alias{getFundamental.QuarterlyReturn}
+\alias{getadditionalFundamental.QuarterlyReturn}
 
 \title{
     Accessing merge data from CRSP and COMPUSTAT
@@ -19,6 +24,11 @@
     getReturnPivot()
     getFundamentalReturnQuery()
     getFundamentalReturn()
+    getadditionalFundamentalReturn()
+    getFundamental.aligned()
+    getadditionalFundamental.aligned()
+    getFundamental.QuarterlyReturn()
+    getadditionalFundamental.QuarterlyReturn()
 }
 \details{
     \code{getReturnTimeSeriesQuery}:
@@ -35,9 +45,26 @@
     
     \code{getFundamentalReturn}:
     Executes the query against the database and returns the rows    
+
+    \code{getadditionalFundamentalReturn}:
+    Executes the query against the database and returns the rows with addtional fundamental factors.
+    
+    \code{getFundamental.aligned}:
+    Executes the query against the database and returns the data with each stock aligned in proper quater.
+    
+    \code{getadditionalFundamental.aligned}:
+    Executes the query against the database and returns the data with additional fundamental data and each stock aligned in proper quater.
+    
+    \code{getFundamental.QuarterlyReturn}:
+    Executes the query against the database and returns the quarterly returns for each stock.
+    
+    \code{getadditionalFundamental.QuarterlyReturn}:
+    Executes the query against the database and returns the quarterly returns for each stock
+    with additional fundamental data.    
+
 }
 \author{
-    Pankaj Singh
+    Pankaj Singh, Jaiganesh Prabhakaran
 }
 \seealso{
 \itemize{

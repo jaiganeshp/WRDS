@@ -121,17 +121,21 @@ getadditionalFundamentalReturnQuery <- function()
 getFundamentalReturn <- function()
 {
   funda.query <- getFundamentalReturnQuery()
-  selectDb(funda.query)  
+  funda.return <-selectDb(funda.query)  
+  funda.return[order(funda.return[,"TICKER"],funda.return[,"CrspDate"]),]
 }
 
 ############Function to get Addtional Fundamental Data############
 getadditionalFundamentalReturn <- function()
 {
   funda.addquery <- getadditionalFundamentalReturnQuery()
-  selectDb(funda.addquery)  
+  funda.return<-selectDb(funda.addquery)  
+  funda.return[order(funda.return[,"TICKER"],funda.return[,"CrspDate"]),]
 }
 
 
+head(getFundamentalReturn())
+head(getadditionalFundamentalReturn())
 
 ########Align the fundamental data############
 getFundamental.aligned<-function()
@@ -151,7 +155,7 @@ getFundamental.aligned<-function()
       }
     }
   }
-  funda.return
+  funda.return[order(funda.return[,"TICKER"],funda.return[,"CrspDate"]),]
 }
 
 
@@ -173,7 +177,7 @@ getadditionalFundamental.aligned<-function()
       }
     }
   }
-  funda.return
+  funda.return[order(funda.return[,"TICKER"],funda.return[,"CrspDate"]),]
 }
 
 
